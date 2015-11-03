@@ -8,6 +8,7 @@ define(function (require) {
 					moduleB = require('pubsub/moduleB');
 
 			moduleB.publishEvent();
+			moduleB.publishEvent();
 		}
 	};
 

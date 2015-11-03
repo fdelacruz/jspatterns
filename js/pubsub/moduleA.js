@@ -1,9 +1,11 @@
 define(function (require) {
 	'use strict';
 
-	var pubsub = require('pubsub/pubsub');
+	var pubsub = require('pubsub/pubsub'),
+			subscription;
 
-	pubsub.subscribe('atopic', function (data) {
+	subscription = pubsub.subscribe('atopic', function (data) {
 		console.log('A topic was published with data: ' + data);
+		subscription.dispose();
 	});
 });
