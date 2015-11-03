@@ -1,0 +1,22 @@
+{
+  "name": "jspatterns",
+  "version": "1.0.0",
+  "authors": [
+    "Francisco De La Cruz <helloquico@gmail.com>"
+  ],
+  "moduleType": [
+    "amd"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/lib",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "requirejs": "~2.1.20"
+  }
+}
