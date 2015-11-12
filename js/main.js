@@ -1,6 +1,6 @@
 require(
-	['factory/init', 'pubsub/init', 'strategy/init', 'observer/init', 'cor/init', 'mediator/init', 'iterator/init'],
-	function (factory, pubsub, strategy, observer, cor, mediator, iterator) {
+	['factory/init', 'pubsub/init', 'strategy/init', 'observer/init', 'cor/init', 'mediator/init', 'iterator/init', 'facade/init'],
+	function (factory, pubsub, strategy, observer, cor, mediator, iterator, facade) {
 		'use strict';
 
 		var examples = {
@@ -10,7 +10,8 @@ require(
 			observer: observer,
 			cor: cor,
 			mediator: mediator,
-			iterator: iterator
+			iterator: iterator,
+			facade: facade
 		};
 
 		window.runExample = function (example) {
